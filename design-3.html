@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>design appareantly</title>
+
+    <style>
+
+        .header{
+            color: #82839d;
+            padding: 10px;
+            background-color: #47495e;
+            float: left;
+            z-index: 1;
+        }
+
+        .nav{
+            width: 100%;
+            float: left;
+        }
+        .nav-links{
+            float: right;
+            width: auto;
+            list-style-type: none;
+            text-align: center;
+            font-size: large;
+        }
+
+        .nav__item{
+            float: left;
+            padding: 0 20px;
+            transition: color 1s;
+        }
+
+        .nav__item:hover{
+            color: #c0c2df;
+        }
+
+        .nav__item--logo{
+            float: left;
+            padding: 0 20px;
+            font-size: large;
+        }
+
+        .header__text{
+            width: 50%;
+            float: left;
+            padding: 0 20px;
+            white-space: pre-line;
+        }
+
+        .header__text--big{
+            font-size: 50px;
+            margin-bottom: 5px;
+        }
+
+        .header__text--small{
+            font-size: small;
+        }
+
+        .white-bold{
+            color: white;
+        }
+
+        .header__button{
+            box-shadow: #494a64 1px 1px 10px;
+            background-color: #5a5c80;
+            color: ghostwhite;
+            border: none;
+            padding: 10px 50px 10px 50px;
+        }
+
+        .laptop{
+            position: relative;
+            top: 50px;
+            transform: rotate(-25grad);
+        }
+
+        .intro-specs{
+            width: 100%;
+            text-align: center;
+            align-content: center;
+            float: left;
+        }
+
+        .intro__text--big{
+            font-size: xx-large;
+            color: #b7b9dd;
+        }
+
+        .intro__text--small{
+            color: #6d6f97;
+        }
+
+        .bold{
+            font-weight: bold;
+            color: #7b7d9e;
+        }
+
+        .stripe{
+            color: #b7b9dd;
+            background-color: #b7b9dd;
+            border: none;
+            width: 80px;
+            height: 3px;
+        }
+
+        .specs{
+            width: 100%;
+            text-align: center;
+        }
+
+        .specs__table{
+            text-align: center;
+            width: 100%;
+
+        }
+        .specs__item{
+            padding: 20px;
+
+        }
+
+        .specs__nr{
+            background: linear-gradient(to bottom, rgba(201, 203, 241, 0), rgba(201, 203, 241, 0.5));
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <h3 class="nav__item--logo"><span class="white-bold">vpower.</span>cloud</h3>
+            <ul class="nav-links">
+                <li class="nav__item"><a class="nav__link">Lorem</a></li>
+                <li class="nav__item"><a class="nav__link">Ipsum</a></li>
+                <li class="nav__item"><a class="nav__link">Dolor</a></li>
+                <li class="nav__item"><a class="nav__link">Jochie</a></li>
+                <li class="nav__item"><a class="nav__link">Zuig</a></li>
+            </ul>
+        </div>
+
+        <h2 class="header__text">
+            <span class="header__text--big">Lorem ipsum dolor <br><span class="white-bold">lorem ipsum</span>.</span><br>
+            <span class="header__text--small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu
+</span><br>
+            <button class="header__button" type="button">CLICK ME</button>
+        </h2>
+
+        <img width="600" class="laptop" src="images/laptop.png">
+    </header>
+
+    <section class="intro-specs">
+        <div class="intro">
+            <p class="intro__text intro__text--big">Jochie zuig <span class="bold">mij</span></p>
+            <hr class="stripe">
+            <p class="intro__text intro__text--small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+        </div>
+        <div class="specs">
+            <table class="specs__table">
+                <tr>
+                    <td>
+                        <div class="specs__item">
+                            <p class="specs__nr">1</p>
+                            <i class="specs__img fas fa-microchip fa-5x"></i>
+                            <p class="specs__title">Lorem</p>
+                            <hr class="stripe">
+                            <p class="specs__text">Lorem ipsum dolor</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="specs__item">
+                            <p class="specs__nr">2</p>
+                            <i class="specs__img fas fa-vector-square fa-5x"></i>
+                            <p class="specs__title">Lorem</p>
+                            <hr class="stripe">
+                            <p class="specs__text">Lorem ipsum dolor</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="specs__item">
+                            <p class="specs__nr">3</p>
+                            <i class="specs__img fas fa-server fa-5x"></i>
+                            <p class="specs__title">Lorem</p>
+                            <hr class="stripe">
+                            <p class="specs__text">Lorem ipsum dolor</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="specs__item">
+                            <p class="specs__nr">4</p>
+                            <i class="specs__img fab fa-cloudversify fa-5x"></i>
+                            <p class="specs__title">Lorem</p>
+                            <hr class="stripe">
+                            <p class="specs__text">Lorem ipsum dolor</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <input class="specs__submit" type="button">
+    </section>
+
+    <section class="reviews">
+        <div class="review-text">
+            <p class="review__title">
+                <span class="review__title--bold">Opinie</span><br>
+                naszych<br>
+                uzytkownikow<br>
+            </p>
+            <div class="review__buttons">
+                <p class="review__buttons--left"> < </p>
+                <p class="review__buttons--right"> > </p>
+            </div>
+        </div>
+        <div class="comments"> <!-- these shouldn't be hardcoded but loaded from some server >_< -->
+            <div class="comments__item">
+                <img class="comment__icon">
+                <p class="comment__title">
+                    <span class="comment__name">Michal Kubalczyk</span>
+                    <span class="comment__place">REV. STUDIO</span>
+                </p>
+                <br>
+                <p class="comment__text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="desc-processor">
+        <div class="desc">
+            <p class="desc__title">
+                lie to <span class="desc__title desc__title--bold">kosztuje</span>?
+            </p>
+            <hr>
+            <p class="desc__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu
+            </p>
+        </div>
+        <div class="processor">
+            <table class="processor-table">
+                <thead>
+                <tr>
+                    <th class="table__th">16 core</th>
+                    <th class="table__th table__th--dark">32 core</th>
+                    <th class="table__th table__th--highlighted">64 core</th>
+                    <th class="table__th table__th--darker">128 core</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Procesor <span class="bold">Xeon serii E5 v3</span> </td>
+                        <td>Procesor <span class="bold">Xeon serii E5 v3</span> </td>
+                        <td>Procesor <span class="bold">Xeon serii E5 v3</span> </td>
+                        <td>Procesor <span class="bold">Xeon serii E5 v3</span> </td>
+                    </tr>
+                    <tr>
+                        <td>16 x <span class="bold">3100MHz</span> </td>
+                        <td>32 x <span class="bold">3100MHz</span> </td>
+                        <td>64 x <span class="bold">3100MHz</span> </td>
+                        <td>128 x <span class="bold">3100MHz</span> </td>
+                    </tr>
+                    <tr>
+                        <td>At <span class="bold">vero eos et</span> accusamus</td>
+                        <td>At <span class="bold">vero eos et</span> accusamus</td>
+                        <td>At <span class="bold">vero eos et</span> accusamus</td>
+                        <td>At <span class="bold">vero eos et</span> accusamus</td>
+                    </tr>
+                    <tr>
+                        <td>Itaque <span class="bold">earum rerum</span></td>
+                        <td>Itaque <span class="bold">earum rerum</span></td>
+                        <td>Itaque <span class="bold">earum rerum</span></td>
+                        <td>Itaque <span class="bold">earum rerum</span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="processor__kredyty">2 kredyty / h</td>
+                        <td class="processor__kredyty">4 kredyty / h</td>
+                        <td class="processor__kredyty">8 kredyty / h</td>
+                        <td class="processor__kredyty">16 kredyty / h</td>
+                    </tr>
+                    <tr>
+                        <td><button class="processor__btn">ZAMOW</button> </td>
+                        <td><button class="processor__btn">ZAMOW</button> </td>
+                        <td><button class="processor__btn processor__btn--highlighted">ZAMOW</button> </td>
+                        <td><button class="processor__btn">ZAMOW</button> </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img class="footer__img">
+        <div class="footer__text">
+            <p>Chcesz wiedziec, <span class="bold">ile zaoszczedzisz</span>?</p>
+            <hr>
+            <p class="footer__text--small">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesqu
+            </p>
+            <button class="footer__button">CLICK ME</button>
+        </div>
+        <hr>
+        <img class="footer__logo">
+        <p class="copyright">2017 All rights reserved</p>
+    </footer>
+</body>
+</html>
